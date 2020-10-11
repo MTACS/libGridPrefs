@@ -1,14 +1,23 @@
 #import "PrefsListController.h"
+#define tweakTintColor [UIColor whatEverColorMacroYouWant]
+
+@interface PrefsListController
 
 // Do your normal preferences stuff here //
 //
 //
 //
 //                                       //
+	
+- (void)openController:(LynxButton *)sender {
+	AudioServicesPlaySystemSound(1519); // Add haptic feedback if you want 
+	NSString *className = sender.identifier;
+	HBRootListController *controller = [[NSClassFromString(className) alloc] init]; // Use the base class of your sub prefs controller here. PSListController iirc
+	[self pushController:controller];
+}
+@end
 
 // Add this to the end. If you prefer to use a separate .m file for your cell class, create and import a custom header as well, and add to the Makefile's files.
-
-#define tweakTintColor [UIColor whatEverColorMacroYouWant]
 
 @interface TweakCustomCell ()
 @end
