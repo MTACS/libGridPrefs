@@ -5,30 +5,30 @@
 	<key>items</key>
 	<array>
 		<dict>
-    	<key>cellClass</key>
-    	<string>TweakCustomCell</string>
-    	<key>cell</key>
-    	<string>PSDefaultCell</string>
-			<key>height</key>
-			<string>150</string> <!-- Set custom height here, I recommend leaving this for best layout like previews -->
-			<key>leftLabel</key>
-			<string>Left Title</string>
-			<key>middleLabel</key>
-			<string>Middle Title</string>
-			<key>rightLabel</key>
-			<string>Right Title</string>
-			<key>leftIcon</key>
-			<string>square.grid.2x2.fill</string> <!-- Set left icon string value of SF Symbols here (iOS 13) -->
-			<key>middleIcon</key>
-			<string>app.badge.fill</string> <!-- Set middle icon string value of SF Symbols here (iOS 13) -->
-			<key>rightIcon</key>
-			<string>lock.circle.fill</string> <!-- Set right icon string value of SF Symbols here (iOS 13) -->
-			<key>leftClass</key>
-			<string>LeftClassController</string>
-			<key>middleClass</key>
-			<string>MiddleClassController</string>
-      			<key>rightClass</key>
-			<string>RightClassController</string>
+    		<key>cellClass</key>
+    		<string>TweakCustomCell</string>
+    		<key>cell</key>
+    		<string>PSDefaultCell</string>
+		<key>height</key>
+		<string>150</string> <!-- Set custom height here, I recommend leaving this for best layout like previews -->
+		<key>leftLabel</key>
+		<string>Left Title</string>
+		<key>middleLabel</key>
+		<string>Middle Title</string>
+		<key>rightLabel</key>
+		<string>Right Title</string>
+		<key>leftIcon</key>
+		<string>square.grid.2x2.fill</string> <!-- Set left icon string value of SF Symbols here (iOS 13) -->
+		<key>middleIcon</key>
+		<string>app.badge.fill</string> <!-- Set middle icon string value of SF Symbols here (iOS 13) -->
+		<key>rightIcon</key>
+		<string>lock.circle.fill</string> <!-- Set right icon string value of SF Symbols here (iOS 13) -->
+		<key>leftClass</key>
+		<string>LeftClassController</string>
+		<key>middleClass</key>
+		<string>MiddleClassController</string>
+		<key>rightClass</key>
+		<string>RightClassController</string>
 		</dict>
 	</array>
 	<key>title</key>
