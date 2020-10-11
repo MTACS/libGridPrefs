@@ -27,7 +27,7 @@
 			<string>LeftClassController</string>
 			<key>middleClass</key>
 			<string>MiddleClassController</string>
-      <key>rightClass</key>
+      			<key>rightClass</key>
 			<string>RightClassController</string>
 		</dict>
 	</array>
