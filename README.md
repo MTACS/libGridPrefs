@@ -10,5 +10,7 @@ Copy code from respective files into your tweak. Rename values you'd like such a
 
 ## Preview
 
-<img src="https://github.com/MTACS/libGridPrefs/blob/main/preview/preview.png" width=50% height=50%>
+<div align="center">
+  <img src="https://github.com/MTACS/libGridPrefs/blob/main/preview/preview.png" width=50% height=50%>
+</div>
 
