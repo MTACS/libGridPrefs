@@ -10,4 +10,4 @@ Copy code from respective files into your tweak. Rename values you'd like such a
 
 ## Preview
 
-![Preview in Lynx](https://github.com/MTACS/libGridPrefs/blob/main/preview/preview.png)
+![Preview in Lynx](https://github.com/MTACS/libGridPrefs/blob/main/preview/preview.png) {width: 30%, height:30%}
