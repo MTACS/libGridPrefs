@@ -34,10 +34,10 @@
 	leftStack.spacing = 15;
 	leftStack.translatesAutoresizingMaskIntoConstraints = false;
 
-	LynxButton *leftButton = [[LynxButton alloc] initWithFrame:CGRectMake(20, 20, 60, 60)];
+	TweakButton *leftButton = [[TweakButton alloc] initWithFrame:CGRectMake(20, 20, 60, 60)];
 	leftButton.tintColor = tweakTintColor;
 	leftButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
-  leftButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
+  	leftButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
 	if (@available(iOS 13, *)) {
 		[leftButton setImage:[UIImage systemImageNamed:self.specifier.properties[@"leftIcon"]] forState:UIControlStateNormal];
 	}
@@ -70,11 +70,11 @@
 	middleStack.spacing = 15;
 	middleStack.translatesAutoresizingMaskIntoConstraints = YES;
 
-	LynxButton *middleButton = [[LynxButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-	middleButton.tintColor = lynxTintColor;
+	TweakButton *middleButton = [[TweakButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+	middleButton.tintColor = tweakTintColor;
 	middleButton.center = CGPointMake(CGRectGetMidX(self.bounds), middleButton.center.y);
 	middleButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
-   middleButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
+   	middleButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
 	if (@available(iOS 13, *)) {
 		[middleButton setImage:[UIImage systemImageNamed:self.specifier.properties[@"middleIcon"]] forState:UIControlStateNormal];
 	}
@@ -107,10 +107,10 @@
 	rightStack.spacing = 15;
 	rightStack.translatesAutoresizingMaskIntoConstraints = false;
 
-	LynxButton *rightButton = [[LynxButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
-	rightButton.tintColor = lynxTintColor;
+	TweakButton *rightButton = [[TweakButton alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+	rightButton.tintColor = tweakTintColor;
 	rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentFill;
-  rightButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
+  	rightButton.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
 	if (@available(iOS 13, *)) {
 		[rightButton setImage:[UIImage systemImageNamed:self.specifier.properties[@"rightIcon"]] forState:UIControlStateNormal];
 	}
@@ -139,7 +139,7 @@
 
 	[self addSubview:stack];
 	[stack.topAnchor constraintEqualToAnchor:self.topAnchor constant:20].active = true;
-  [stack.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-40].active = true;
+  	[stack.bottomAnchor constraintEqualToAnchor:self.bottomAnchor constant:-40].active = true;
 	[stack.heightAnchor constraintEqualToAnchor:self.heightAnchor constant:-40].active = true;
 	[stack.widthAnchor constraintEqualToAnchor:self.widthAnchor constant:-40].active = true;
 	[stack.centerXAnchor constraintEqualToAnchor:self.centerXAnchor].active = true;
