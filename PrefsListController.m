@@ -51,7 +51,7 @@
 	leftButton.layer.shadowOpacity = 0.5;
 	leftButton.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10); // Custom image size, I recommend this over changing cell size
 	leftButton.identifier = self.specifier.properties[@"leftClass"];
-	[leftButton addTarget:[[LynxRootListController alloc] init] action:@selector(openController:) forControlEvents:UIControlEventTouchUpInside];
+	[leftButton addTarget:[[PrefsListController alloc] init] action:@selector(openController:) forControlEvents:UIControlEventTouchUpInside];
 	[leftStack addArrangedSubview:leftButton];
 	[leftButton.widthAnchor constraintEqualToConstant:80].active = true;
 	[leftButton.heightAnchor constraintEqualToConstant:80].active = true;
@@ -88,7 +88,7 @@
 	middleButton.layer.shadowOpacity = 0.5;
 	middleButton.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
 	middleButton.identifier = self.specifier.properties[@"middleClass"];
-	[middleButton addTarget:[[LynxRootListController alloc] init] action:@selector(openController:) forControlEvents:UIControlEventTouchUpInside];
+	[middleButton addTarget:[[PrefsListController alloc] init] action:@selector(openController:) forControlEvents:UIControlEventTouchUpInside];
 	[middleStack addArrangedSubview:middleButton];
 	[middleButton.widthAnchor constraintEqualToConstant:80].active = true;
 	[middleButton.heightAnchor constraintEqualToConstant:80].active = true;
@@ -124,7 +124,7 @@
 	rightButton.layer.shadowOpacity = 0.5;
 	rightButton.imageEdgeInsets = UIEdgeInsetsMake(10, 10, 10, 10);
 	rightButton.identifier = self.specifier.properties[@"rightClass"];
-	[rightButton addTarget:[[LynxRootListController alloc] init] action:@selector(openController:) forControlEvents:UIControlEventTouchUpInside];
+	[rightButton addTarget:[[PrefsListController alloc] init] action:@selector(openController:) forControlEvents:UIControlEventTouchUpInside];
 	[rightStack addArrangedSubview:rightButton];
 	[rightButton.widthAnchor constraintEqualToConstant:80].active = true;
 	[rightButton.heightAnchor constraintEqualToConstant:80].active = true;
