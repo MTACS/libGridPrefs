@@ -1,4 +1,5 @@
 #import "TweakCustomCell.h"
+#import "PrefsListController.h"
 #import "HEX-Colors.h"
 
 UIImage *leftIconImage;
@@ -26,6 +27,20 @@ UIImage *rightIconImage;
 	NSString *middleIconPathString = [NSString stringWithFormat:@"/Library/PreferenceBundles/YourTweakPrefs.bundle/Assets/%@.png", self.specifier.properties[@"middleIcon"]];
 	NSString *rightIconPathString = [NSString stringWithFormat:@"/Library/PreferenceBundles/YourTweakPrefs.bundle/Assets/%@.png", self.specifier.properties[@"rightIcon"]];
 
+	
+	// UIColor string from HEX-Colors.h
+        NSString *iconTintColorString = self.specifier.properties[@"iconColor"];
+        iconTintColor = colorFromHexString(iconTintColorString);
+
+        NSString *iconShadowColorString = self.specifier.properties[@"iconShadowColor"];
+        iconShadowColor = colorFromHexString(iconShadowColorString);
+
+        NSString *fontColorString = self.specifier.properties[@"fontColor"];
+        fontColor = colorFromHexString(fontColorString);
+
+        // Float values for icon UIEdgeInsetsMake
+        NSString *iconInsetString = [NSString stringWithFormat:@"%@", self.specifier.properties[@"iconInset"]];
+        CGFloat iconInset = [iconInsetString floatValue];
 
 	if ([self.specifier.properties[@"renderingMode"] isEqualToString:@"template"]) { // Check specifier properties if it's set to template then the icon image's tint color will be applied
 
@@ -39,26 +54,13 @@ leftIconImage = [[UIImage imageNamed:leftIconPathString]imageWithRenderingMode:U
 middleIconImage = [[UIImage imageNamed:middleIconPathString]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 rightIconImage = [[UIImage imageNamed:rightIconPathString]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 
-} else if ([self.specifier.properties[@"fontColor"] isEqualToString:@"default"]) { // Check specifier properties if default are set then it will use UIColor.labelColor as font color otherwise it will use hex color values
+}  
+	
+	if ([self.specifier.properties[@"fontColor"] isEqualToString:@"default"]) { // Check specifier properties if default are set then it will use UIColor.labelColor as font color otherwise it will use hex color values
 
 	fontColor = UIColor.labelColor;
 
 }
-
-
-// UIColor string from HEX-Colors.h
-NSString *iconTintColorString = self.specifier.properties[@"iconColor"];
-iconTintColor = colorFromHexString(iconTintColorString);
-
-NSString *iconShadowColorString = self.specifier.properties[@"iconShadowColor"];
-iconShadowColor = colorFromHexString(iconShadowColorString);
-
-NSString *fontColorString = self.specifier.properties[@"fontColor"];
-fontColor = colorFromHexString(fontColorString);
-
-// Float values for icon UIEdgeInsetsMake
-NSString *iconInsetString = [NSString stringWithFormat:@"%@", self.specifier.properties[@"iconInset"]];
-CGFloat iconInset = [iconInsetString floatValue];
 
 
 UIStackView *stack = [[UIStackView alloc] initWithFrame:self.bounds];
