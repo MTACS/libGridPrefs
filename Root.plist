@@ -15,8 +15,8 @@
 				<string>0023FF</string>
 				<key>iconShadowColor</key> <!-- Image shadow color from hex values (without hashtag) -->
 				<string>000000</string>
-				<key>renderingMode</key> <!-- Icon image rendering mode either template if you want to use tint color otherwise set it to original then the icon image won't be tint -->
-				<string>template</string>
+				<key>renderingMode</key> <!-- Icon image rendering mode either true if you want to use tint color otherwise set it to false then the icon image won't be tint. Use string value-->
+				<string>true</string>
 				<key>iconInset</key> <!-- Icon inset UIEdgeInsetsMake float value -->
 				<string>10</string>
 				<key>fontColor</key> <!-- Font color from hex values (without hashtag), if you don't want to use custom color then set it to default so the label will use UIColor.labelColor -->

@@ -11,7 +11,6 @@ static CGFloat colorComponentFrom(NSString *string, NSInteger start, NSInteger l
     return hexComponent / 255.0;
 }
 
-
 static UIColor *colorFromHexString(NSString *hexString) {
     CGFloat red, green, blue, alpha;
     switch(hexString.length) {

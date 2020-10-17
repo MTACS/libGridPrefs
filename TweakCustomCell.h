@@ -3,7 +3,6 @@
 #import <Preferences/PSSpecifier.h>
 #import <Preferences/PSTableCell.h>
 
-
 @interface TweakButton : UIButton
 @property (nonatomic, retain) NSString *identifier;
 @end
@@ -14,5 +13,4 @@
 @end
 
 @interface TweakCustomCell: PSTableCell <TweakTableView>
-
 @end
